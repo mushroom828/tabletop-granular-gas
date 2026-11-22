@@ -1,0 +1,83 @@
+{
+  "video": "140r_3",
+  "processed_frames": 20000,
+  "expected_balls": 3,
+  "expected_balls_source": "filename",
+  "inference": {
+    "conf": 0.25,
+    "nms_iou": 0.2
+  },
+  "ball_counts": {
+    "detected_balls": {
+      "evaluated_frames": 20000,
+      "first_eligible_frame": 1,
+      "histogram": {
+        "3": 20000
+      },
+      "maximum_count": 3,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 20000,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    },
+    "tracked_balls": {
+      "evaluated_frames": 20000,
+      "first_eligible_frame": 1,
+      "histogram": {
+        "3": 20000
+      },
+      "maximum_count": 3,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 20000,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    },
+    "velocity_balls": {
+      "evaluated_frames": 19999,
+      "first_eligible_frame": 2,
+      "histogram": {
+        "3": 19999
+      },
+      "maximum_count": 3,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 19999,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    }
+  },
+  "ball_filtering": {
+    "unit": "detection_boxes_per_frame",
+    "order": [
+      "size_gate",
+      "ball_count"
+    ],
+    "input_detections": 60000,
+    "after_size_gate": 60000,
+    "sent_to_tracker": 60000,
+    "event_frames": 0,
+    "size_gate": {
+      "enabled": true,
+      "ratio": 0.85,
+      "removed_boxes": 0,
+      "affected_frames": 0
+    },
+    "ball_count": {
+      "enabled": true,
+      "expected_balls": 3,
+      "removed_boxes": 0,
+      "affected_frames": 0
+    }
+  },
+  "container_detection_histogram": {
+    "1": 20000
+  },
+  "reliable_container_positions": 19641,
+  "container_velocity_records": 19548,
+  "ball_filter_events": []
+}

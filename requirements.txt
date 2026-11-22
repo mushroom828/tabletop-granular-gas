@@ -1,0 +1,14 @@
+# Python >=3.12.
+# Install with: python -m pip install -r requirements.txt
+numpy==2.4.3
+pandas==3.0.1
+scipy==1.18.1
+matplotlib==3.10.9
+opencv-python==5.0.0.93
+ultralytics==8.4.163
+torch==2.14.0
+torchvision==0.29.0
+filterpy==1.4.5
+openpyxl==3.1.5
+
+# Optional notebook support: install jupyter.

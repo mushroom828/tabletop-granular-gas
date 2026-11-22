@@ -1,0 +1,150 @@
+{
+  "video": "160r_1",
+  "processed_frames": 20000,
+  "expected_balls": 1,
+  "expected_balls_source": "filename",
+  "inference": {
+    "conf": 0.25,
+    "nms_iou": 0.2
+  },
+  "ball_counts": {
+    "detected_balls": {
+      "evaluated_frames": 20000,
+      "first_eligible_frame": 1,
+      "histogram": {
+        "1": 20000
+      },
+      "maximum_count": 1,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 20000,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    },
+    "tracked_balls": {
+      "evaluated_frames": 20000,
+      "first_eligible_frame": 1,
+      "histogram": {
+        "1": 20000
+      },
+      "maximum_count": 1,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 20000,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    },
+    "velocity_balls": {
+      "evaluated_frames": 19999,
+      "first_eligible_frame": 2,
+      "histogram": {
+        "1": 19999
+      },
+      "maximum_count": 1,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 19999,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    }
+  },
+  "ball_filtering": {
+    "unit": "detection_boxes_per_frame",
+    "order": [
+      "size_gate",
+      "ball_count"
+    ],
+    "input_detections": 20001,
+    "after_size_gate": 20000,
+    "sent_to_tracker": 20000,
+    "event_frames": 1,
+    "size_gate": {
+      "enabled": true,
+      "ratio": 0.85,
+      "removed_boxes": 1,
+      "affected_frames": 1
+    },
+    "ball_count": {
+      "enabled": true,
+      "expected_balls": 1,
+      "removed_boxes": 0,
+      "affected_frames": 0
+    }
+  },
+  "container_detection_histogram": {
+    "1": 20000
+  },
+  "reliable_container_positions": 19777,
+  "container_velocity_records": 19717,
+  "ball_filter_events": [
+    {
+      "schema_version": 1,
+      "video": "160r_1",
+      "frame": 10007,
+      "timestamp": 41.7794,
+      "expected_balls": 1,
+      "raw_detected_balls": 2,
+      "after_size_gate": 1,
+      "sent_to_tracker": 1,
+      "size_gate": {
+        "enabled": true,
+        "ratio": 0.85,
+        "threshold_px": 71.56108177029822
+      },
+      "count_enforcement_enabled": true,
+      "all_confidences_desc": [
+        0.9164539575576782,
+        0.41876816749572754
+      ],
+      "count_candidates_confidences_desc": [
+        0.9164539575576782
+      ],
+      "kept_confidences_desc": [
+        0.9164539575576782
+      ],
+      "size_removed_confidences_desc": [
+        0.41876816749572754
+      ],
+      "count_removed_confidences_desc": [],
+      "min_kept_confidence": 0.9164539575576782,
+      "min_count_removed_confidence": null,
+      "max_count_removed_confidence": null,
+      "count_confidence_gap": null,
+      "detections": [
+        {
+          "detection_index": 1,
+          "xyxy_px": [
+            266.61590576171875,
+            171.41473388671875,
+            349.8387756347656,
+            252.07969665527344
+          ],
+          "width_px": 83.22286987304688,
+          "height_px": 80.66496276855469,
+          "diameter_px": 81.93393497081412,
+          "confidence": 0.9164539575576782,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 2,
+          "xyxy_px": [
+            265.93804931640625,
+            148.33694458007812,
+            321.2236022949219,
+            176.46885681152344
+          ],
+          "width_px": 55.285552978515625,
+          "height_px": 28.131912231445312,
+          "diameter_px": 39.437143964269545,
+          "confidence": 0.41876816749572754,
+          "kept": false,
+          "removal_reason": "size_gate"
+        }
+      ]
+    }
+  ]
+}

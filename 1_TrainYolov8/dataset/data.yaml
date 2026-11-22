@@ -1,0 +1,15 @@
+# Omit 'path' so Ultralytics uses this YAML file's directory as the dataset root.
+# Keep this file beside the 'train', 'val', and optional 'test' subfolders.
+# Use forward slashes in the split paths below for portability.
+# Classes are unified across train/val/test: 0 = ball, 1 = container.
+# Container annotations use the inner box (formerly box_in).
+
+# Image folders relative to this YAML file's directory.
+train: train/images   # Training images
+val: val/images       # Validation images
+test: test/images     # Test images (optional)
+
+# Class names and their corresponding indices
+names:
+  0: ball
+  1: container

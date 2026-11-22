@@ -1,0 +1,606 @@
+{
+  "video": "100r_7",
+  "processed_frames": 20000,
+  "expected_balls": 7,
+  "expected_balls_source": "filename",
+  "inference": {
+    "conf": 0.25,
+    "nms_iou": 0.2
+  },
+  "ball_counts": {
+    "detected_balls": {
+      "evaluated_frames": 20000,
+      "first_eligible_frame": 1,
+      "histogram": {
+        "7": 20000
+      },
+      "maximum_count": 7,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 20000,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    },
+    "tracked_balls": {
+      "evaluated_frames": 20000,
+      "first_eligible_frame": 1,
+      "histogram": {
+        "7": 20000
+      },
+      "maximum_count": 7,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 20000,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    },
+    "velocity_balls": {
+      "evaluated_frames": 19999,
+      "first_eligible_frame": 2,
+      "histogram": {
+        "7": 19999
+      },
+      "maximum_count": 7,
+      "below_expected_frames": 0,
+      "equal_expected_frames": 19999,
+      "above_expected_frames": 0,
+      "above_expected_percent": 0.0,
+      "excess_count_total": 0,
+      "above_expected_frame_ranges": []
+    }
+  },
+  "ball_filtering": {
+    "unit": "detection_boxes_per_frame",
+    "order": [
+      "size_gate",
+      "ball_count"
+    ],
+    "input_detections": 140003,
+    "after_size_gate": 140000,
+    "sent_to_tracker": 140000,
+    "event_frames": 3,
+    "size_gate": {
+      "enabled": true,
+      "ratio": 0.85,
+      "removed_boxes": 3,
+      "affected_frames": 3
+    },
+    "ball_count": {
+      "enabled": true,
+      "expected_balls": 7,
+      "removed_boxes": 0,
+      "affected_frames": 0
+    }
+  },
+  "container_detection_histogram": {
+    "1": 20000
+  },
+  "reliable_container_positions": 20000,
+  "container_velocity_records": 19997,
+  "ball_filter_events": [
+    {
+      "schema_version": 1,
+      "video": "100r_7",
+      "frame": 2290,
+      "timestamp": 9.557500000000001,
+      "expected_balls": 7,
+      "raw_detected_balls": 8,
+      "after_size_gate": 7,
+      "sent_to_tracker": 7,
+      "size_gate": {
+        "enabled": true,
+        "ratio": 0.85,
+        "threshold_px": 68.81478325254639
+      },
+      "count_enforcement_enabled": true,
+      "all_confidences_desc": [
+        0.9479880928993225,
+        0.9378944635391235,
+        0.9375361800193787,
+        0.9371966123580933,
+        0.9348729252815247,
+        0.9327723979949951,
+        0.914031982421875,
+        0.27571991086006165
+      ],
+      "count_candidates_confidences_desc": [
+        0.9479880928993225,
+        0.9378944635391235,
+        0.9375361800193787,
+        0.9371966123580933,
+        0.9348729252815247,
+        0.9327723979949951,
+        0.914031982421875
+      ],
+      "kept_confidences_desc": [
+        0.9479880928993225,
+        0.9378944635391235,
+        0.9375361800193787,
+        0.9371966123580933,
+        0.9348729252815247,
+        0.9327723979949951,
+        0.914031982421875
+      ],
+      "size_removed_confidences_desc": [
+        0.27571991086006165
+      ],
+      "count_removed_confidences_desc": [],
+      "min_kept_confidence": 0.914031982421875,
+      "min_count_removed_confidence": null,
+      "max_count_removed_confidence": null,
+      "count_confidence_gap": null,
+      "detections": [
+        {
+          "detection_index": 1,
+          "xyxy_px": [
+            1278.9586181640625,
+            276.99932861328125,
+            1356.758544921875,
+            358.139404296875
+          ],
+          "width_px": 77.7999267578125,
+          "height_px": 81.14007568359375,
+          "diameter_px": 79.45245084518763,
+          "confidence": 0.9479880928993225,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 2,
+          "xyxy_px": [
+            985.6170654296875,
+            565.3934936523438,
+            1064.352783203125,
+            647.0389404296875
+          ],
+          "width_px": 78.7357177734375,
+          "height_px": 81.64544677734375,
+          "diameter_px": 80.17738368734135,
+          "confidence": 0.9378944635391235,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 3,
+          "xyxy_px": [
+            1419.40478515625,
+            318.08380126953125,
+            1499.907958984375,
+            399.5755615234375
+          ],
+          "width_px": 80.503173828125,
+          "height_px": 81.49176025390625,
+          "diameter_px": 80.99595879598007,
+          "confidence": 0.9375361800193787,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 4,
+          "xyxy_px": [
+            1313.7498779296875,
+            487.85888671875,
+            1393.9697265625,
+            570.4217529296875
+          ],
+          "width_px": 80.2198486328125,
+          "height_px": 82.5628662109375,
+          "diameter_px": 81.38292591282618,
+          "confidence": 0.9371966123580933,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 5,
+          "xyxy_px": [
+            778.74462890625,
+            577.3703002929688,
+            858.1600341796875,
+            659.7794799804688
+          ],
+          "width_px": 79.4154052734375,
+          "height_px": 82.4091796875,
+          "diameter_px": 80.8984449982467,
+          "confidence": 0.9348729252815247,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 6,
+          "xyxy_px": [
+            1470.75830078125,
+            533.66357421875,
+            1552.8489990234375,
+            617.1700439453125
+          ],
+          "width_px": 82.0906982421875,
+          "height_px": 83.5064697265625,
+          "diameter_px": 82.79555789771338,
+          "confidence": 0.9327723979949951,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 7,
+          "xyxy_px": [
+            1506.2054443359375,
+            339.85589599609375,
+            1584.1571044921875,
+            421.78887939453125
+          ],
+          "width_px": 77.95166015625,
+          "height_px": 81.9329833984375,
+          "diameter_px": 79.91753297908208,
+          "confidence": 0.914031982421875,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 8,
+          "xyxy_px": [
+            1580.265380859375,
+            362.23956298828125,
+            1632.6181640625,
+            422.57977294921875
+          ],
+          "width_px": 52.352783203125,
+          "height_px": 60.3402099609375,
+          "diameter_px": 56.20478565492448,
+          "confidence": 0.27571991086006165,
+          "kept": false,
+          "removal_reason": "size_gate"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "video": "100r_7",
+      "frame": 4412,
+      "timestamp": 18.417855555555555,
+      "expected_balls": 7,
+      "raw_detected_balls": 8,
+      "after_size_gate": 7,
+      "sent_to_tracker": 7,
+      "size_gate": {
+        "enabled": true,
+        "ratio": 0.85,
+        "threshold_px": 68.87901133045257
+      },
+      "count_enforcement_enabled": true,
+      "all_confidences_desc": [
+        0.9421061277389526,
+        0.9361914992332458,
+        0.9339539408683777,
+        0.933201789855957,
+        0.9318004250526428,
+        0.9305407404899597,
+        0.9225961565971375,
+        0.25268447399139404
+      ],
+      "count_candidates_confidences_desc": [
+        0.9421061277389526,
+        0.9361914992332458,
+        0.9339539408683777,
+        0.933201789855957,
+        0.9318004250526428,
+        0.9305407404899597,
+        0.9225961565971375
+      ],
+      "kept_confidences_desc": [
+        0.9421061277389526,
+        0.9361914992332458,
+        0.9339539408683777,
+        0.933201789855957,
+        0.9318004250526428,
+        0.9305407404899597,
+        0.9225961565971375
+      ],
+      "size_removed_confidences_desc": [
+        0.25268447399139404
+      ],
+      "count_removed_confidences_desc": [],
+      "min_kept_confidence": 0.9225961565971375,
+      "min_count_removed_confidence": null,
+      "max_count_removed_confidence": null,
+      "count_confidence_gap": null,
+      "detections": [
+        {
+          "detection_index": 1,
+          "xyxy_px": [
+            1425.544921875,
+            521.7837524414062,
+            1504.261962890625,
+            603.2017822265625
+          ],
+          "width_px": 78.717041015625,
+          "height_px": 81.41802978515625,
+          "diameter_px": 80.05614523576264,
+          "confidence": 0.9421061277389526,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 2,
+          "xyxy_px": [
+            1498.9632568359375,
+            400.7104797363281,
+            1580.1214599609375,
+            482.1129455566406
+          ],
+          "width_px": 81.158203125,
+          "height_px": 81.4024658203125,
+          "diameter_px": 81.28024271568579,
+          "confidence": 0.9361914992332458,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 3,
+          "xyxy_px": [
+            1336.671142578125,
+            606.22607421875,
+            1414.586181640625,
+            686.9019775390625
+          ],
+          "width_px": 77.9150390625,
+          "height_px": 80.6759033203125,
+          "diameter_px": 79.2834545072591,
+          "confidence": 0.9339539408683777,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 4,
+          "xyxy_px": [
+            1340.8988037109375,
+            498.6856384277344,
+            1420.5045166015625,
+            580.0819091796875
+          ],
+          "width_px": 79.605712890625,
+          "height_px": 81.39627075195312,
+          "diameter_px": 80.49601331648392,
+          "confidence": 0.933201789855957,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 5,
+          "xyxy_px": [
+            1151.174560546875,
+            450.0857849121094,
+            1231.812744140625,
+            531.909423828125
+          ],
+          "width_px": 80.63818359375,
+          "height_px": 81.82363891601562,
+          "diameter_px": 81.22874871139143,
+          "confidence": 0.9318004250526428,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 6,
+          "xyxy_px": [
+            1259.1156005859375,
+            572.3117065429688,
+            1338.3050537109375,
+            654.5282592773438
+          ],
+          "width_px": 79.189453125,
+          "height_px": 82.216552734375,
+          "diameter_px": 80.68880869648454,
+          "confidence": 0.9305407404899597,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 7,
+          "xyxy_px": [
+            1395.1065673828125,
+            775.377197265625,
+            1475.2210693359375,
+            856.1390380859375
+          ],
+          "width_px": 80.114501953125,
+          "height_px": 80.7618408203125,
+          "diameter_px": 80.4375201888826,
+          "confidence": 0.9225961565971375,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 8,
+          "xyxy_px": [
+            948.5654296875,
+            389.67498779296875,
+            1000.6138916015625,
+            441.9224853515625
+          ],
+          "width_px": 52.0484619140625,
+          "height_px": 52.24749755859375,
+          "diameter_px": 52.147884777654596,
+          "confidence": 0.25268447399139404,
+          "kept": false,
+          "removal_reason": "size_gate"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "video": "100r_7",
+      "frame": 17772,
+      "timestamp": 74.20175555555556,
+      "expected_balls": 7,
+      "raw_detected_balls": 8,
+      "after_size_gate": 7,
+      "sent_to_tracker": 7,
+      "size_gate": {
+        "enabled": true,
+        "ratio": 0.85,
+        "threshold_px": 68.92605730044832
+      },
+      "count_enforcement_enabled": true,
+      "all_confidences_desc": [
+        0.9416351914405823,
+        0.9402298927307129,
+        0.9360477328300476,
+        0.9342051148414612,
+        0.9306056499481201,
+        0.9268392324447632,
+        0.9031708836555481,
+        0.25780823826789856
+      ],
+      "count_candidates_confidences_desc": [
+        0.9416351914405823,
+        0.9402298927307129,
+        0.9360477328300476,
+        0.9342051148414612,
+        0.9306056499481201,
+        0.9268392324447632,
+        0.9031708836555481
+      ],
+      "kept_confidences_desc": [
+        0.9416351914405823,
+        0.9402298927307129,
+        0.9360477328300476,
+        0.9342051148414612,
+        0.9306056499481201,
+        0.9268392324447632,
+        0.9031708836555481
+      ],
+      "size_removed_confidences_desc": [
+        0.25780823826789856
+      ],
+      "count_removed_confidences_desc": [],
+      "min_kept_confidence": 0.9031708836555481,
+      "min_count_removed_confidence": null,
+      "max_count_removed_confidence": null,
+      "count_confidence_gap": null,
+      "detections": [
+        {
+          "detection_index": 1,
+          "xyxy_px": [
+            1279.74560546875,
+            486.34320068359375,
+            1360.081298828125,
+            569.5364990234375
+          ],
+          "width_px": 80.335693359375,
+          "height_px": 83.19329833984375,
+          "diameter_px": 81.75201101492665,
+          "confidence": 0.9416351914405823,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 2,
+          "xyxy_px": [
+            1060.69873046875,
+            614.5224609375,
+            1140.46826171875,
+            696.390625
+          ],
+          "width_px": 79.76953125,
+          "height_px": 81.8681640625,
+          "diameter_px": 80.81203543757402,
+          "confidence": 0.9402298927307129,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 3,
+          "xyxy_px": [
+            1342.1055908203125,
+            256.62322998046875,
+            1419.9114990234375,
+            337.03912353515625
+          ],
+          "width_px": 77.805908203125,
+          "height_px": 80.4158935546875,
+          "diameter_px": 79.10013673811372,
+          "confidence": 0.9360477328300476,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 4,
+          "xyxy_px": [
+            994.6580200195312,
+            709.1796875,
+            1074.52490234375,
+            792.0324096679688
+          ],
+          "width_px": 79.86688232421875,
+          "height_px": 82.85272216796875,
+          "diameter_px": 81.34610385034031,
+          "confidence": 0.9342051148414612,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 5,
+          "xyxy_px": [
+            1479.51904296875,
+            291.7154846191406,
+            1560.65234375,
+            373.498291015625
+          ],
+          "width_px": 81.13330078125,
+          "height_px": 81.78280639648438,
+          "diameter_px": 81.45740623234147,
+          "confidence": 0.9306056499481201,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 6,
+          "xyxy_px": [
+            1145.274658203125,
+            342.771728515625,
+            1225.474609375,
+            425.103759765625
+          ],
+          "width_px": 80.199951171875,
+          "height_px": 82.33203125,
+          "diameter_px": 81.25899880094073,
+          "confidence": 0.9268392324447632,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 7,
+          "xyxy_px": [
+            1509.07373046875,
+            178.42117309570312,
+            1588.720947265625,
+            260.4394226074219
+          ],
+          "width_px": 79.647216796875,
+          "height_px": 82.01824951171875,
+          "diameter_px": 80.82403912302361,
+          "confidence": 0.9031708836555481,
+          "kept": true,
+          "removal_reason": null
+        },
+        {
+          "detection_index": 8,
+          "xyxy_px": [
+            1584.19482421875,
+            197.38125610351562,
+            1628.659423828125,
+            256.7440185546875
+          ],
+          "width_px": 44.464599609375,
+          "height_px": 59.362762451171875,
+          "diameter_px": 51.37646799944307,
+          "confidence": 0.25780823826789856,
+          "kept": false,
+          "removal_reason": "size_gate"
+        }
+      ]
+    }
+  ]
+}

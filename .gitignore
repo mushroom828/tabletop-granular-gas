@@ -1,0 +1,24 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+*.cache
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+
+# Generated training and analysis outputs
+1_TrainYolov8/runs/
+1_TrainYolov8/10_fps*.mp4
+2_GetResults/save_results/
+3_AnalysisResults/figures/
+*.log
+*.tmp
+~$*.xlsx
+
+# Raw videos are distributed separately from the code and processed data.
+*.mp4
+*.avi
+
+# Keep the supplied weights, datasets, calibration files, and analysis CSVs.
